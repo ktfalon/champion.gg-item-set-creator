@@ -187,7 +187,8 @@ class ChampionGG {
 		return $data;
 	}
 }
-
+//Line of code should be added to allow for execution past 120 seconds
+set_time_limit(0); // No time limit 
 $champ = new ChampionGG();
 //$champ->getOneSet("Bard", "Support");
 $champ->getAllSets();
